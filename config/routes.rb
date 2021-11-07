@@ -1,3 +1,4 @@
+
 Rails.application.routes.draw do
   resources :articles, only: [:index, :show]
   
@@ -8,3 +9,4 @@ Rails.application.routes.draw do
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
 end
+
